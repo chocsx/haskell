@@ -18,10 +18,4 @@ splitList n (x:xs) = (x:xs', xs'') -- position n (head:tail) = (head:tail', tail
     (xs', xs'') = splitAt (n - 1) xs -- split on position before the 'n'
     
 replaceAtIndex :: Int -> a -> [a] -> [a] -- position, String, list, newList
-replaceAtIndex n item ls = a ++ (item:b) where (a, (_:b)) = splitAt n ls
-   
-
-
-    
---d2m :: String -> [a] - >[a]
---d2m x xs = 
+replaceAtIndex n item ls = a ++ (item:b) where (a, (_:b)) = splitAt n ls -- position, String, list and the replace function
